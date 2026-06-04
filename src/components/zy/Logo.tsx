@@ -3,9 +3,8 @@ import { Link } from "@tanstack/react-router";
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <Link to="/" className={`flex items-center gap-2.5 ${className}`}>
-      <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-elevated ring-1 ring-white/10">
-        <span className="absolute inset-1.5 rounded-md bg-gradient-brand opacity-90" />
-        <span className="absolute inset-[10px] rounded-sm bg-background/80" />
+      <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg bg-surface-elevated ring-1 ring-white/10">
+        <img src="/pngfav.png" alt="Zybytee" className="h-full w-full object-contain" />
       </span>
       <span className="flex items-baseline gap-1.5 font-display text-[15px] font-semibold tracking-tight">
         Zybytee
